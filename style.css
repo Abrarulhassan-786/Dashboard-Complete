@@ -1,0 +1,686 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* --------------Top container like desktop Image----------------- */
+#TopContainer {
+    background: url("./images/homePageImage.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+/* --------------logo animation cs start ----------------- */
+.animationLogo {
+    font-family: 'Courgette', cursive;
+    color: white;
+    padding: 1em;
+    letter-spacing: 8px;
+    font-size: 30px;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg, #81c8d4 0%, #9e78c7 29%, #b11046 67%, #ddf193 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200%;
+    }
+}
+
+/* --------------logo animation cs end----------------- */
+
+/* --------------text center div start----------------- */
+#textCenter {
+    line-height: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+#textCenter p {
+    font-size: 40px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+/* --------------text center div end----------------- */
+
+/* --------------working on button login and signup start----------------- */
+
+.btn {
+    margin: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Goudy Bookletter 1911', serif;
+    background-color: #33A2CF;
+    border: none;
+    color: white;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 1px 1px 2px 2px lightsteelblue;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: white;
+    box-shadow: 2px 3px 4px 1px black;
+    color: black;
+
+}
+
+#headDiv {
+    display: flex;
+}
+
+#navbar {
+    display: flex;
+    width: 20%;
+    margin-left: 65%;
+}
+
+/* --------------working on button login and signup start----------------- */
+
+/* --------------Home page Done----------------- */
+
+
+/* --------------Singup form start working-----------------*/
+
+.ContainerSinUp {
+    display: flex;
+    justify-content: center;
+    display: none;
+    padding: 30px;
+    background: url("./images/singUpBackGround.jpg");
+}
+
+form {
+    padding: 20px;
+    width: 100%;
+    max-width: 80em;
+    border: 2px solid white;
+    margin: -25px 0 0 -25px;
+    color: #B6B9BD;
+    margin: 1px;
+    border-radius: 10px 0px 0px 0px;
+}
+
+/* --------------Singup form heading css-----------------*/
+
+#signUpHead {
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+
+hr {
+    background-color: #33A2CF;
+    margin: 15px;
+}
+
+/* --------------input field design-----------------*/
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 85%;
+    box-shadow: 2px 2px 2px 1px #A9C3DC;
+    margin-right: 20px;
+    background-color: #F3F4F5;
+    font-family: 'Roboto Mono', monospace;
+    border: 1px solid lightblue;
+    color: #9A9A9B;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* --------------input field hover effect----------------*/
+
+
+
+/* --------------gender label and radio button div----------------*/
+
+#genderLable {
+    margin: 5px;
+    padding: 2px;
+    margin-left: 12px;
+    background-color: #F3F4F5;
+    border: 1px solid lightblue;
+    box-shadow: 2px 2px 2px 1px #A9C3DC;
+    border: 1px solid lightblue;
+    width: 89%;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+
+
+#male,
+#female {
+    width: 3%;
+}
+
+.labels {
+    color: #9A9A9B;
+    font-size: 15px
+}
+
+/* --------------link tage design----------------*/
+
+#linkaccount {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    margin-left: 20%;
+    font-family: 'Laila', sans-serif;
+    font-weight: bold;
+}
+
+#ContainerSinUp {
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------image banner div design----------------*/
+
+#containerBanner img {
+    width: 80%;
+    height: 50%;
+    margin: 5%;
+    margin-left: 10%;
+    border-radius: 70%;
+}
+
+#containerBanner {
+    width: 40%;
+    height: 127.6vh;
+    margin-left: 3.5%;
+    margin-top: 0.1%;
+    background-color: #33A2CF;
+    opacity: 0.8;
+    border-radius: 0px 0px 10px 0px;
+
+}
+
+#containerBanner h2 {
+    margin: 30px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#containerBanner p {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#btnSingupLogin {
+    background-color: #33A2CF;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: -2px 3px 4px 1px darkslateblue;
+    margin-left: 20%;
+}
+
+#btnSingupLogin:hover {
+    background-color: white;
+    box-shadow: 2px 3px 4px 1px black;
+    color: black;
+}
+
+#btnSingup{
+    padding: 10px;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 20%;
+    border-radius: 20px;
+    background-color: #55ACEE;
+    border: none;  
+    color: white;
+    box-shadow: 2px 3px 2px white;
+}
+/* --------------Signup form work End----------------*/
+
+
+/* --------------Login Design Start----------------*/
+
+#LoginContainer {
+    display: flex;
+    justify-content: center;
+    padding: 7.5%;
+    height: auto;
+    background: url("./images/loginBannerbg.jpg");
+    display: none;
+}
+
+#LoginContainer form {
+    border: 4px solid #55ACEE;
+    width: 30%;
+
+}
+
+#LoginContainer form h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;;
+}
+#SocialIcon{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+}
+#SocialIcon .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 80%;
+}
+
+#SocialIcon .fa:hover {
+    opacity: 0.7;
+}
+
+#SocialIcon .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+#SocialIcon .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+#SocialIcon .fa-instagram {
+    background: #125688;
+    color: white;
+}
+#PasForgot{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color:#55ACEE;
+    font-size: 15x;
+    padding: 30px;
+}
+
+#LoginContainer button{
+    width: 40%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    background-color: black;
+    box-shadow: -3px 2px 5px 2px white;
+}
+#btnSingupLogin{
+    width: 40%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    background-color: black;
+    box-shadow: -3px 2px 5px 2px white;
+    color: white;
+}
+#LoginBanner{
+    border: 1px solid #33A2CF;
+    padding: 6%;
+    background-color: #55ACEE;
+    border-radius: 0px 0px 10px 0px;
+    opacity: 0.9;
+
+}
+#LoginBanner h1,h3,p{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-family:'Courier New', Courier, monospace;
+}
+.error{
+    margin-left: 10px;
+    color:brown;
+    padding: 3px;
+}
+/* --------------#Login Page Design End#---------------*/
+
+
+/* --------------#Dashboard Page Design start#---------------*/
+
+/* --------------#Dashboard Page Design Navigation bar#---------------*/
+#DashBoard{
+    border: 1px solid red;
+}
+#dashboardContainer{
+    display: none;
+}
+#navbarDashboard{
+    display: flex;
+}
+#buttonNav{
+    display: flex;
+    padding: 20px;
+    width: 15%;
+    margin-left: 66%;
+}
+#LogOut button{
+    font-size: 17px;
+    background-color: #55ACEE;
+    padding: 15px;
+    margin: 8px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 3px 0px 5px 1px black;
+}
+#LogOut button:hover{
+    background-color: white;
+    box-shadow: 2px 3px 4px 1px black;
+    color: black;
+}
+#userProfile{
+    padding: 2px;
+    margin: 8px;
+    background-color: #55ACEE;
+    width: 85px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 3px 0px 5px 1px black;
+    cursor: pointer;
+}
+
+#userProfile .fa{
+    padding: 6px;
+    margin-left: 27%;
+}
+#navbarDashboard{
+    background-color:aliceblue;
+    box-shadow: 3px 4px 5px 0.2px black;
+}
+/* --------------#Dashboard Page Design Navigation bar#---------------*/
+
+
+/* --------------#Dashboard Page Design Side bar#---------------*/
+#SideBarMain{
+    display: flex;
+}
+#sideBar{
+    position: sticky;
+    top: 1px;
+    width:59%;
+    padding: 30px;
+    height: 85vh;
+    background-color:aliceblue;
+    border: 1px solid black;
+}
+#imageDiv{
+    margin-left: 10%;
+    padding: 5px;
+}
+#imageDiv img{
+    width: 70%;
+    height: 21vh;
+    box-shadow: 3px 4px 5px 0.2px rgb(212, 222, 231);
+    border-radius: 90%;
+}
+#information,#listMenu {
+    padding: 1px;
+    margin: 4px;
+}
+#listMenu{
+    display: none;
+}
+#information ul{
+    padding: 20px;
+    box-shadow: 3px 4px 5px 0.2px rgb(212, 222, 231);
+}
+#information ul li{
+    padding: 8px;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+
+}
+#listMenu ul{
+    padding: 20px;
+    box-shadow: 3px 4px 5px 0.2px rgb(212, 222, 231);
+    list-style: none;
+}
+#listMenu ul li{
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#displayAssignemnt{
+    border: none;
+    width: 15%;
+    margin-left: 3%;
+
+}
+.imageContainer{
+    width: 35%;
+    margin: 10px;
+    box-shadow: 3px 4px 5px 0.7px rgb(212, 222, 231);
+}
+#mainPage{
+    margin: 30px;
+}
+#image4 img{
+    width:10%;
+}
+.WrapperAssignment{
+    display: flex;
+    column-gap: 10px;
+}
+.imageContainer {
+    position: relative;
+    width: 50%;
+  }
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .imageContainer:hover .image {
+    opacity: 0.3;
+  }
+  
+  .imageContainer:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #55ACEE;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+/* --------------#Dashboard Page Design film create and Design start---------------*/
+#ContainerMain h1{ 
+    text-align: center;
+    margin: 1%;
+    font-family: 'Courier New', Courier, monospace;
+}
+#headingUser{
+    width: 100%;
+}
+
+#MoviesContainer{
+    display: none;
+}
+.checkImage{
+    width: 100%;
+    height:30vh;  
+}
+#row1,#row2{
+    display: flex;
+}
+#row1,#row2 img{
+    margin: 10px;
+}
+.movies{
+    margin: 15px;
+}
+.movies:hover{
+    opacity: 0.3;
+}
+#Movie6{
+    width: 35%;
+}
+#Movie6 img{
+    width: 93%;
+} 
+/* --------------#Dashboard Page Design film create and Design End---------------*/
+
+/* --------------#Dashboard Page Design Movies User Select Seats---------------*/
+
+/*-----------Making seat using Cs----*/
+#Movie1Information{
+    width: 100%;
+    padding: 10px;
+    margin: 40px;
+    display: none;
+    background-color: #03325c;
+}
+#userDataGet{
+    margin: 60px 20px 60px 20px;
+
+}
+#screen h1{
+    padding: 20px;
+}
+#screen{
+    background-color: white;
+    margin: 40px;
+    box-shadow: -10px 4px 7px -2px white;
+}
+
+.seat.occupied{
+    background-color: gold;
+}
+.seat.premimum{
+    background-color:#55ACEE
+}
+.seat{
+    background-color: #125688;
+    height: 20px;
+    width: 15px;
+    margin: 6px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.container .row{
+    display: flex;
+    column-gap: 10px;
+    padding: 3px;
+    justify-content: center;
+}
+#informationAboutSeats{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.seatsandText{
+    display: flex;
+    padding: 2px;
+}
+#UserDataShow{
+    margin: 20px;
+    display: none;
+    margin-left: 96px;
+    width: 83%;
+    padding: 20px;
+    background-color: #A9C3DC;
+    box-shadow: 3px 4px 2px lightgray;
+    border-radius: 10px 0px 10px 0px ;
+}
+#UserDataShow #HeadingUser h1{
+    color:white;
+    letter-spacing: 4px;
+}
+#textDataUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#UserDataShow #textDataUser{
+    padding: 30px;
+}
+#textDataUser .texts{
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#textDataUser span{
+    font-size: 20px;
+    text-transform: uppercase;
+    color:#3B5998;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#textDataUser #dobU{
+    margin-left: 70px;
+}
+#textDataUser #NameU,#emailU,#postalCodeU{
+    margin-left: 50px;
+}
+#textDataUser #passU{
+    margin-left: 55px;
+}
+#textDataUser #addresU{
+    margin-left: 40px;
+}
+#textDataUser #genderU{
+    margin-left: 40px;
+}
+#textDataUser #mobileU{
+    margin-left: 34px;
+}
+#footerUser h1{
+    text-align: center;
+    color: white;
+}
+
+
+
+

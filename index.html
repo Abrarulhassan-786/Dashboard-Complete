@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Goudy+Bookletter+1911&family=Josefin+Sans:ital,wght@0,200;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&family=Laila:wght@300&family=Miltonian+Tattoo&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Pattaya&family=Poppins:wght@200&family=Roboto+Mono:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DashBoard</title>
+</head>
+
+<body>
+
+    <!-- --------------Home page Start------------------->
+
+    <div id="TopContainer">
+        <div id="headDiv">
+            <div id="heading">
+                <h2 id="logo" class="animationLogo">ABRAR</h2>
+            </div>
+            <div id="navbar">
+                <button class="btn" id="SignUp" onclick="SIngUpFunc()">SignUp</button>
+                <button class="btn" id="Login" onclick="loginFunc()">Login</button>
+            </div>
+        </div>
+        <div id="textCenter">
+            <p>👋 HI! DASHBOARD START FROM HERE ☝️</p>
+        </div>
+    </div>
+
+    <!----------------Home page Done------------------->
+
+    <!----------------Singup Container start working------------------->
+
+    <div class="ContainerSinUp">
+        <div>
+            <!----------------Singup form input field------------------->
+            <form action="#" name="myform" onsubmit="return(validationForm());">
+                <h1 id="signUpHead">SIGN-UP</h1>
+                <hr>
+                <input type="text" name="username" class="fieldInput" id="username" placeholder="User Name...">
+                <div id="Error1" class="error"></div>
+                <input type="email" name="" class="fieldInput" id="email" placeholder="Email...">
+                <div id="Error2" class="error"></div>
+                <input type="date" name="" class="fieldInput" id="calender" placeholder="DOB...">
+                <div id="Error6" class="error"></div>
+                <input type="password" name="" class="fieldInput" id="password" placeholder="Password...">
+                <div id="Error3" class="error"></div>
+                <input type="password" name="" class="fieldInput" id="confPass" placeholder="Confirm Password...">
+                <div id="Error4" class="error"></div>
+                <input type="text" name="" class="fieldInput" id="Address" placeholder="Address...">
+                <div id="Error5" class="error"></div>
+                <div id="genderLable">
+                    <label for="gender" class="labels">Gender: </label>
+                    <label for="male" class="labels">Male</label>
+                    <input type="radio" name="gender" id="male" value="Male" class="fieldInput">
+                    <label for="female" class="labels">Female</label>
+                    <input type="radio" name="gender" id="female" value="Female" class="fieldInput">
+                </div>
+                <div id="Error10" class="error"></div>
+                <input type="text" name="" class="fieldInput" id="number" placeholder="Mobile Number...">
+                <div id="Error8" class="error"></div>
+                <input type="text" name="" class="fieldInput" id="postalCode" placeholder="Postal Code...">
+                <div id="Error9" class="error"></div>
+                <hr>
+                <div id="alredyAccound">
+                    <a id="linkaccount" href="#">Already Have an Account!</a>
+                </div>
+                <hr>
+                <button type="submit" id="btnSingup" value="Singup" onclick="nextPAGE()">SignUp</button>
+            </form>
+            <!----------------Singup input end Worked------------------>
+        </div>
+        <!----------------Completed singup form worked------------------>
+
+        <!----------------singup banne start working------------------>
+        <div id="containerBanner">
+            <div id="headingBanner">
+                <h2>Hi! WELCOME TO SIGNUP FORM</h2>
+            </div>
+            <div id="imagesLogo">
+                <img src="./images/signupimg.jpg" alt="">
+            </div>
+            <div id="paragrapgSingup">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo natus aut nesciunt numquam nisi,
+                    repellendus voluptatem, odit sunt praesentium, corporis non. Corporis optio, eius quasi dolor
+                    architecto deserunt totam nobis!</p>
+            </div>
+        </div>
+        <!----------------singup banne end worked------------------>
+    </div>
+    <!----------------Singup Container End worked------------------->
+
+    <!----------------Login Working Start------------------->
+    <div id="LoginContainer">
+        <form action="#" name="login" onsubmit="return(loginFuncdata());">
+            <h1>Login</h1>
+            <div id="SocialIcon">
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="https://web.facebook.com/profile.php?id=100081043041073" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <!----------------Login inut field user------------------->
+            <input type="email" name="" class="fieldInput" id="mails" placeholder="Email...">
+            <div id="error1" class="error"></div>
+            <input type="password" name="" class="fieldInput" id="passwords" placeholder="Password...">
+            <div id="error2" class="error"></div>
+            <a id="PasForgot" href="#">Forgotten Password?</a>
+            <button type="submit" value="Singup" id="btnSingupLogin"">Login</button>
+        </form>
+        <!----------------Login inut field user Complete------------------->
+
+        <!----------------Login banner start------------------>
+        <div id="LoginBanner">
+            <h3>Hi! Welcome To Login</h3>
+            <h1>Sing-up</h1>
+            <p>SinnUp Account You have't Account</p>
+            <button type="submit" id="btnSingup" class="btn">SignUp</button> 
+        </div>
+    </div>
+
+    <!----------------Login banner End------------------>
+    <!----------------Login page Working End------------------>
+
+    <!----------------Dashboard Working Start------------------>
+    <div id="dashboardContainer">
+        <div id="navbarDashboard">
+            <div id="heading">
+                <h2 id="logo" class="animationLogo">ABRAR</h2>
+            </div>
+            <div id="buttonNav">
+                <div id="LogOut">
+                    <button type="button" onclick="LogOutData()">LogOut</button>
+                </div>
+                <div id="userProfile">
+                    <i class="fa fa-user" style="font-size:35px;color:white" id="dataIformation"
+                        onclick="DisplayDatUser()"></i>
+                </div>
+            </div>
+        </div>
+        <div id="SideBarMain">
+            <div id="sideBar">
+                <div id="image">
+                    <div id="imageDiv">
+                        <img src="./images/mepic.jpg" alt="">
+                    </div>
+                    <div id="information">
+                        <ul>
+                            <li>
+                                <h2>SMIT</h2>
+                            </li>
+                            <li>
+                                <h2>Abrar Ul Hassan</h2>
+                            </li>
+                            <li>
+                                <h2>Batch-8</h2>
+                            </li>
+                            <li>
+                                <h2>78689897</h2>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="./images/menuIcon.svg" onclick="DisplayAssignments()" id="displayAssignemnt" alt="">
+                    <div id="listMenu">
+                        <ul>
+                            <li onclick="DisplayMoviesOnmain()">Movie Assignment</li>
+                            <li>JSON Assignments</li>
+                            <li>JS Assignment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="ContainerMain">
+                <div id="mainPage">
+                    <div id="headingUser">
+                        <h1 id="nameUser"></h1>
+                    </div>
+                    <div class="WrapperAssignment" id="Row1Images">
+                        <div id="image1" class="imageContainer">
+                            <img src="./images/ballon.jpg" alt="Avatar" class="image" style="width:100%">
+                            <div class="middle">
+                                <div class="text">Ballon Game</div>
+                            </div>
+                        </div>
+                        <div id="image2" class="imageContainer">
+                            <img src="./images/calculator.jpg" alt="SimpleCalculator" class="image" style="width:100%">
+                            <div class="middle">
+                                <div class="text">Simple calculator</div>
+                            </div>
+                        </div>
+                        <div id="image3" class="imageContainer">
+                            <img src="./images/scientificCalculator.jpg" alt="scientificCalculator" class="image"
+                                style="width:100%">
+                            <div class="middle">
+                                <div class="text">Scientific Calculator</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="row2Images" class="WrapperAssignment">
+                        <div id="image4" class="imageContainer">
+                            <img src="./images/head&Tail.jpg" alt="Avatar" class="image" style="width:100%"
+                                height=190px>
+                            <div class="middle">
+                                <div class="text">Head & Tail</div>
+                            </div>
+                        </div>
+                        <div id="image5" class="imageContainer">
+                            <img src="./images/syllani.jpg" alt="Avatar" class="image" style="width:100%">
+                            <div class="middle">
+                                <div class="text">Syllani Website</div>
+                            </div>
+                        </div>
+                        <div id="image6" class="imageContainer">
+                            <img src="./images/navbar.jpg" alt="Avatar" class="image" style="width:100%">
+                            <div class="middle">
+                                <div class="text">Navbar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="UserDataShow">
+                    <div id="dataShowUser">
+                        <div id="HeadingUser">
+                            <h1>USER DATA</h1>
+                        </div>
+                        <hr>
+                        <div id="textDataUser">
+                            <div id="getDta">
+                                <span>Name </span><span class="texts" id="NameU"></span><br><br>
+                                <span>Email </span><span class="texts" id="emailU"></span><br><br>
+                                <span>DOB </span><span class="texts" id="dobU"></span><br><br>
+                                <span>Pswd </span><span class="texts" id="passU"></span><br><br>
+                                <span>Adress </span><span class="texts" id="addresU"></span><br><br>
+                                <span>Gender </span><span class="texts" id="genderU"></span><br><br>
+                                <span>Mobile# </span><span class="texts" id="mobileU"></span><br><br>
+                                <span>P-Code </span><span class="texts" id="postalCodeU"></span>
+                            </div>
+                        </div>
+
+                        <div id="footerUser">
+                            <hr>
+                            <h1>Thanks by Abrar ul Hassan</h1>
+                        </div>
+                    </div>
+                </div>
+                <div id="MoviesContainer">
+                    <h1>Movies Thunder</h1>
+                    <div id="row1">
+                        <div id="Movie1" class="movies" onclick="TicketBookMovie()">
+                            <img src="./images/film1.jpg" class="checkImage" alt="" onclick="movie1()">
+                        </div>
+                        <div id="Movie2" class="movies">
+                            <img src="./images/film2.jpg" class="checkImage" alt="">
+                        </div>
+                        <div id="Movie3" class="movies">
+                            <img src="./images/film3.jpg" class="checkImage" alt="">
+                        </div>
+                    </div>
+                    <div id="row2">
+                        <div id="Movie4" class="movies">
+                            <img src="./images/film4.jpg" class="checkImage" alt="">
+                        </div>
+                        <div id="Movie5" class="movies">
+                            <img src="./images/film5.jpg" class="checkImage" alt="">
+                        </div>
+                        <div id="Movie6" class="movies">
+                            <img src="./images/film6.jpg" class="checkImage" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="Movie1Information">
+                    <div id="userDataGet">
+                        <div id="screen">
+                            <h1>Start soon!</h1>
+                        </div>
+                        <div id="SeatsGet">
+                            <div class="container">
+                                <div class="screen"></div>
+                                <div class="row">
+                                    <div class="seat" id="seatNo1" vlaue="1" onclick="userSeat(1)"></div>
+                                    <div class="seat" id="seatNo2" vlaue="2" onclick="userSeat(2)"></div>
+                                    <div class="seat premimum" id="seatNo3" vlaue="3" onclick="userSeat(3)">
+                                    </div>
+                                    <div class="seat" vlaue="4" id="seatNo4" onclick="userSeat(4)"></div>
+                                    <div class="seat" vlaue="5" id="seatNo5" onclick="userSeat(5)"></div>
+                                    <div class="seat premimum" id="seatNo6" vlaue="6" onclick="userSeat(6)">
+                                    </div>
+                                    <div class="seat" vlaue="7" id="seatNo7" onclick="userSeat(7)"></div>
+                                    <div class="seat" vlaue="8" id="seatNo8" onclick="userSeat(8)"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="seat premimum" id="seatNo9" onclick="userSeat(9)"></div>
+                                    <div class="seat" id="seatNo10" onclick="userSeat(10)"></div>
+                                    <div class="seat" id="seatNo11" onclick="userSeat(11)"></div>
+                                    <div class="seat occupied" id="seatNo12" onclick="userSeatAc()"></div>
+                                    <div class="seat occupied" id="seatNo13" onclick="userSeatAc()"></div>
+                                    <div class="seat" id="seatNo14" onclick="userSeat(14)"></div>
+                                    <div class="seat" id="seatNo15" onclick="userSeat(15)"></div>
+                                    <div class="seat" id="seatNo16" onclick="userSeat(16)"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="seat" id="seatNo17" onclick="userSeat(17)"></div>
+                                    <div class="seat premimum" id="seatNo18" onclick="userSeat(18)"></div>
+                                    <div class="seat" id="seatNo19" onclick="userSeat(19)"></div>
+                                    <div class="seat" id="seatNo20" onclick="userSeat(20)"></div>
+                                    <div class="seat" id="seatNo21" onclick="userSeat(21)"></div>
+                                    <div class="seat" id="seatNo22" onclick="userSeat(22)"></div>
+                                    <div class="seat occupied" id="seatNo23" onclick="userSeatAc()"></div>
+                                    <div class="seat" id="seatNo24" onclick="userSeat(24)"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="seat select" id="seatNo25" onclick="userSeat(25)"></div>
+                                    <div class="seat" id="seatNo26" onclick="userSeat(26)"></div>
+                                    <div class="seat premimum" id="seatNo27" onclick="userSeat(27)"></div>
+                                    <div class="seat" id="seatNo28" onclick="userSeat(28)"></div>
+                                    <div class="seat" id="seatNo29" onclick="userSeat(29)"></div>
+                                    <div class="seat" id="seatNo30" onclick="userSeat(30)"></div>
+                                    <div class="seat" id="seatNo31" onclick="userSeat(31)"></div>
+                                    <div class="seat" id="seatNo32" onclick="userSeat(32)"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="seat" id="seatNo33" onclick="userSeat(33)"></div>
+                                    <div class="seat" id="seatNo34" onclick="userSeat(34)"></div>
+                                    <div class="seat" id="seatNo35" onclick="userSeat(35)"></div>
+                                    <div class="seat occupied" id="seatNo36" onclick="userSeatAc()"></div>
+                                    <div class="seat occupied" id="seatNo37" onclick="userSeatAc()"></div>
+                                    <div class="seat" id="seatNo38" onclick="userSeat(38)"></div>
+                                    <div class="seat" id="seatNo39" onclick="userSeat(39)"></div>
+                                    <div class="seat" id="seatNo40" onclick="userSeat(40)"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="seat" id="seatNo41" onclick="userSeat(41)"></div>
+                                    <div class="seat" id="seatNo42" onclick="userSeat(42)"></div>
+                                    <div class="seat" id="seatNo43" onclick="userSeat(43)"></div>
+                                    <div class="seat" id="seatNo44" onclick="userSeat(44)"></div>
+                                    <div class="seat occupied" id="seatNo45" onclick="userSeatAcc()"></div>
+                                    <div class="seat" id="seatNo46" onclick="userSeat(46)"></div>
+                                    <div class="seat" id="seatNo47" onclick="userSeat(47)"></div>
+                                    <div class="seat" id="seatNo48" onclick="userSeat(48)"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="informationAboutSeats">
+                            <div id="premiumSeat" class="seatsandText">
+                                <div class="seat premimum"></div>
+                                <span> Preimum Seats</span>
+                            </div>
+                            <div id="SelectedSeats" class="seatsandText">
+                                <div class="seat"></div>
+                                <span>Free</span>
+                            </div>
+                            <div id="occupied" class="seatsandText">
+                                <div class="seat occupied"></div>
+                                <span>Occupied</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
